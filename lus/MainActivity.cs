@@ -6,7 +6,7 @@ using Android.Support.V7.App;
 
 namespace lus
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme")]
     public class MainActivity : AppCompatActivity
     {
         Button btnAuth;
@@ -32,8 +32,8 @@ namespace lus
         }
         private void DoAuthentication(object sender, EventArgs e)
         {
-            if (editTextUsername.Text.Equals("bichito") && editTextPassword.Text.Equals("123456")
-            {
+            if (editTextUsername.Text.Equals("bichito") && editTextPassword.Text.Equals("123456"))
+            { 
                 Toast.MakeText(this, "usuario valido", ToastLength.Short).Show();
 
             } else
